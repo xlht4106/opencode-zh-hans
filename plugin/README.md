@@ -54,10 +54,14 @@ TextareaRenderable.placeholder：注册成功
 
 ## 词典维护
 
-- `dict.json` 由项目根目录的 `dict/zh-CN.json`（源码汉化词典）与 `dict/runtime-extra.json`（运行时补充）生成：
+- `dict.json` 由三层合成（后者覆盖前者）：
+  1. `dict/zh-CN.json`：源码汉化词典
+  2. `dict/runtime-extra.json`：运行时补充（带前导空格的自动补全项、placeholder 组合串等）
+  3. `dict/refinements.json`：翻译优化覆盖层（正式化/语境调整，优先级最高）
 
 ```sh
-node scripts/build-dict.mjs
+# 在仓库根目录执行
+node plugin/scripts/build-dict.mjs
 ```
 
 - 覆盖率审计（开发用）：`node scripts/audit.mjs`，会在独立 tmux 会话中巡检主要界面，未命中英文写入 `audit/unmatched.json`。

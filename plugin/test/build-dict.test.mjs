@@ -27,6 +27,14 @@ test("extra 覆盖内置词条", () => {
   assert.equal(r.entries.Settings, "设定")
 })
 
+test("refinements 覆盖 runtime-extra 与内置词条", () => {
+  const refinements = { entries: { Settings: "系统设置", "新增键": "新值" } }
+  const r = buildDictionary(source, extra, refinements)
+  assert.equal(r.entries.Settings, "系统设置")
+  assert.equal(r.entries["新增键"], "新值")
+  assert.equal(r.entries.Open, "打开")
+})
+
 test("输出按 key 排序且带 version", () => {
   const r = buildDictionary(source, {})
   const keys = Object.keys(r.entries)
