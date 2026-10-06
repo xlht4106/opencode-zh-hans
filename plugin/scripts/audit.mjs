@@ -76,8 +76,16 @@ async function main() {
   tmux("send-keys", "-t", SESSION, "l")
   await sleep(2500)
   await capture("05-sessions")
-  tmux("send-keys", "-t", SESSION, "Enter")
+  tmux("send-keys", "-t", SESSION, "C-a") // 切到“所有项目”，确保有会话可打开
   await sleep(2500)
+  await capture("05b-all-sessions")
+  let opened = false
+  for (let attempt = 0; attempt < 3 && !opened; attempt++) {
+    tmux("send-keys", "-t", SESSION, "Enter")
+    await sleep(3000)
+    const text = tmux("capture-pane", "-p", "-t", SESSION)
+    opened = !text.includes("没有可用会话")
+  }
   await capture("06-session")
 
   tmux("send-keys", "-t", SESSION, "C-c")

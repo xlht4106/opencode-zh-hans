@@ -1,10 +1,38 @@
 [
  {
+  "text": "New session - 2026-10-06T17:39:13.804Z",
+  "count": 1
+ },
+ {
+  "text": "New session - 2026-10-06T17:33:27.700Z",
+  "count": 1
+ },
+ {
+  "text": "New session - 2026-10-06T15:00:14.388Z",
+  "count": 1
+ },
+ {
+  "text": "New session - 2026-10-06T14:55:58.722Z",
+  "count": 1
+ },
+ {
   "text": "llama-3.1-nemotron-safety-guard-8b-v3",
   "count": 1
  },
  {
   "text": "llama-3_2-nemoretriever-300m-embed-v1",
+  "count": 1
+ },
+ {
+  "text": "Fetch https://example.com page title",
+  "count": 1
+ },
+ {
+  "text": "Fetch webpage title for example.com",
+  "count": 1
+ },
+ {
+  "text": "Fetch page title from example.com",
   "count": 1
  },
  {
@@ -16,11 +44,31 @@
   "count": 1
  },
  {
+  "text": "Fetching example.com page title",
+  "count": 1
+ },
+ {
+  "text": "Get page title from example.com",
+  "count": 1
+ },
+ {
+  "text": "Fetch https://example.com title",
+  "count": 1
+ },
+ {
   "text": "Nemotron 3.5 Lightning 30B A3B",
   "count": 1
  },
  {
   "text": "llama-nemotron-rerank-vl-1b-v2",
+  "count": 1
+ },
+ {
+  "text": "Get page title for example.com",
+  "count": 1
+ },
+ {
+  "text": "Example.com page title request",
   "count": 1
  },
  {
@@ -44,6 +92,10 @@
   "count": 1
  },
  {
+  "text": "Fetch example.com page title",
+  "count": 1
+ },
+ {
   "text": "Nemotron 3.5 Lightning Free",
   "count": 1
  },
@@ -64,6 +116,10 @@
   "count": 1
  },
  {
+  "text": "Get example.com page title",
+  "count": 1
+ },
+ {
   "text": "DiffusionGemma 26B A4B IT",
   "count": 1
  },
@@ -81,6 +137,14 @@
  },
  {
   "text": "Ling 3.0 Flash Fin Free",
+  "count": 1
+ },
+ {
+  "text": "Fetch example.com title",
+  "count": 1
+ },
+ {
+  "text": "example.com page title",
   "count": 1
  },
  {
@@ -161,6 +225,10 @@
  },
  {
   "text": "MiMo-V2.6-Flash",
+  "count": 1
+ },
+ {
+  "text": "Tue Oct 06 2026",
   "count": 1
  },
  {
@@ -404,10 +472,6 @@
   "count": 1
  },
  {
-  "text": "horizontal",
-  "count": 1
- },
- {
   "text": "GPT-6 Luna",
   "count": 1
  },
@@ -436,11 +500,11 @@
   "count": 1
  },
  {
-  "text": "ctrl+x m",
+  "text": "ctrl+x l",
   "count": 1
  },
  {
-  "text": "ctrl+x l",
+  "text": "ctrl+x m",
   "count": 1
  },
  {
@@ -464,27 +528,11 @@
   "count": 1
  },
  {
-  "text": "opencode",
-  "count": 1
- },
- {
-  "text": "rendered",
-  "count": 1
- },
- {
-  "text": "Markdown",
-  "count": 1
- },
- {
   "text": "Grok 4.7",
   "count": 1
  },
  {
   "text": "Grok 4.6",
-  "count": 1
- },
- {
-  "text": "compact",
   "count": 1
  },
  {
@@ -540,18 +588,6 @@
   "count": 1
  },
  {
-  "text": "system",
-  "count": 1
- },
- {
-  "text": "prompt",
-  "count": 1
- },
- {
-  "text": "select",
-  "count": 1
- },
- {
   "text": "Nvidia",
   "count": 1
  },
@@ -572,18 +608,6 @@
   "count": 1
  },
  {
-  "text": "auto",
-  "count": 1
- },
- {
-  "text": "hide",
-  "count": 1
- },
- {
-  "text": "word",
-  "count": 1
- },
- {
   "text": "max",
   "count": 1
  },
@@ -593,18 +617,6 @@
  },
  {
   "text": "VCS",
-  "count": 1
- },
- {
-  "text": "low",
-  "count": 1
- },
- {
-  "text": "TPS",
-  "count": 1
- },
- {
-  "text": "off",
   "count": 1
  },
  {

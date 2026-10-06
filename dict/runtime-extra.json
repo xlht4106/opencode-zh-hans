@@ -33,6 +33,16 @@
     "Ask anything… \"Fix broken tests\"": "随便问点什么… \"修复失败的测试\"",
     "Run a command… \"ls -la\"": "运行命令… \"ls -la\"",
     "Run a command… \"git status\"": "运行命令… \"git status\"",
-    "Run a command… \"pwd\"": "运行命令… \"pwd\""
+    "Run a command… \"pwd\"": "运行命令… \"pwd\"",
+    " Export session transcript": " 导出会话对话记录",
+    " Copy session transcript": " 复制会话对话记录",
+    " Undo previous message": " 撤销上一条消息",
+    " Compact session": " 压缩会话",
+    " Jump to message": " 跳转到消息",
+    " Rename session": " 重命名会话",
+    " Share session": " 分享会话",
+    " Fork session": " 派生会话",
+    " New terminal": " 新建终端",
+    "show inactive": "显示非活动"
   }
 }

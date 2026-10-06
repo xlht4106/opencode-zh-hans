@@ -50,3 +50,30 @@ test("parseDictionary 拒绝非法形状", () => {
 test("parseDictionary 接受合法形状", () => {
   assert.deepEqual(parseDictionary({ version: 1, entries: { a: "甲" } }), { a: "甲" })
 })
+
+test("translate 翻译工具回合摘要", () => {
+  const t = createTranslator({})
+  assert.equal(t.translate("1 command, 3 edits, 2 thoughts"), "1 个命令，3 处编辑，2 条思考")
+})
+
+test("translate 支持加号前缀与复数摘要", () => {
+  const t = createTranslator({})
+  assert.equal(t.translate("+ 2 commands, 2 thoughts"), "+ 2 个命令，2 条思考")
+})
+
+test("translate 支持单项摘要", () => {
+  const t = createTranslator({})
+  assert.equal(t.translate("1 thought"), "1 条思考")
+  assert.equal(t.translate("1 edit"), "1 处编辑")
+})
+
+test("translate 不误伤非摘要文本", () => {
+  const t = createTranslator({})
+  assert.equal(t.translate("2 fast cars"), "2 fast cars")
+  assert.equal(t.translate("1 command and more"), "1 command and more")
+})
+
+test("translate 精确匹配优先于摘要规则", () => {
+  const t = createTranslator({ "1 edit": "自定义" })
+  assert.equal(t.translate("1 edit"), "自定义")
+})
