@@ -1,0 +1,17 @@
+{
+  "modules": {
+    "chunk-a.js": {
+      "Settings": "设置",
+      "change": { "text": "切换", "nth": [1, 2] },
+      "Open": "打开",
+      "Exit": "退出"
+    },
+    "chunk-b.js": {
+      "Settings": "设置",
+      "Open": "打开"
+    },
+    "chunk-c.js": {
+      "Open": "开启"
+    }
+  }
+}
