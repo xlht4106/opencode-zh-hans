@@ -1,0 +1,734 @@
+[
+ {
+  "text": " One-shot answer from the session's context without adding to the conversation",
+  "count": 1
+ },
+ {
+  "text": " review changes [commit|branch|pr], defaults to uncommitted",
+  "count": 1
+ },
+ {
+  "text": "llama-3.1-nemotron-safety-guard-8b-v3",
+  "count": 1
+ },
+ {
+  "text": "llama-3_2-nemoretriever-300m-embed-v1",
+  "count": 1
+ },
+ {
+  "text": "riva-translate-4b-instruct-v1_1",
+  "count": 1
+ },
+ {
+  "text": "Llama 3.1 Nemotron 70B Instruct",
+  "count": 1
+ },
+ {
+  "text": "Nemotron 3.5 Lightning 30B A3B",
+  "count": 1
+ },
+ {
+  "text": "llama-nemotron-rerank-vl-1b-v2",
+  "count": 1
+ },
+ {
+  "text": "llama-nemotron-embed-vl-1b-v2",
+  "count": 1
+ },
+ {
+  "text": "Llama 3.1 Nemotron Ultra 253B",
+  "count": 1
+ },
+ {
+  "text": "Llama-3.2-90B-Vision-Instruct",
+  "count": 1
+ },
+ {
+  "text": "Llama 3.2 11b Vision Instruct",
+  "count": 1
+ },
+ {
+  "text": "DeepSeek V4 Flash Vision Exp",
+  "count": 1
+ },
+ {
+  "text": "Nemotron 3.5 Lightning Free",
+  "count": 1
+ },
+ {
+  "text": "Nemotron 3.5 Content Safety",
+  "count": 1
+ },
+ {
+  "text": "Muse Spark 1.3 Contributor",
+  "count": 1
+ },
+ {
+  "text": "Muse Spark 1.2 Contributor",
+  "count": 1
+ },
+ {
+  "text": "Nemotron 3 Ultra 550B A55B",
+  "count": 1
+ },
+ {
+  "text": " Change working directory",
+  "count": 1
+ },
+ {
+  "text": "DiffusionGemma 26B A4B IT",
+  "count": 1
+ },
+ {
+  "text": " Open session or project",
+  "count": 1
+ },
+ {
+  "text": "ctrl+c, ctrl+d, ctrl+x q",
+  "count": 1
+ },
+ {
+  "text": "LongCat 2.5 Preview Free",
+  "count": 1
+ },
+ {
+  "text": "Mistral-7B-Instruct-v0.3",
+  "count": 1
+ },
+ {
+  "text": " Connect an integration",
+  "count": 1
+ },
+ {
+  "text": " guided AGENTS.md setup",
+  "count": 1
+ },
+ {
+  "text": "Ling 3.0 Flash Fin Free",
+  "count": 1
+ },
+ {
+  "text": " Switch model variant",
+  "count": 1
+ },
+ {
+  "text": " Reload configuration",
+  "count": 1
+ },
+ {
+  "text": "DeepSeek V4 Pro (New)",
+  "count": 1
+ },
+ {
+  "text": "Nemotron 3 Ultra Free",
+  "count": 1
+ },
+ {
+  "text": "MiMo-V2.6-Flash Free",
+  "count": 1
+ },
+ {
+  "text": "Nemotron 3 Nano Omni",
+  "count": 1
+ },
+ {
+  "text": "Magistral Small 2506",
+  "count": 1
+ },
+ {
+  "text": "rerank-qa-mistral-4b",
+  "count": 1
+ },
+ {
+  "text": "DeepSeek V4.1 Flash",
+  "count": 1
+ },
+ {
+  "text": "Ling 3.1 Flash Free",
+  "count": 1
+ },
+ {
+  "text": "Muse Spark 1.3 Free",
+  "count": 1
+ },
+ {
+  "text": " Manage workspaces",
+  "count": 1
+ },
+ {
+  "text": "nemotron-voicechat",
+  "count": 1
+ },
+ {
+  "text": "nv-embedcode-7b-v1",
+  "count": 1
+ },
+ {
+  "text": " Open diff viewer",
+  "count": 1
+ },
+ {
+  "text": " Usage statistics",
+  "count": 1
+ },
+ {
+  "text": "DeepSeek V4 Flash",
+  "count": 1
+ },
+ {
+  "text": "Fledge Alpha Free",
+  "count": 1
+ },
+ {
+  "text": "Cosmos Reason2 8B",
+  "count": 1
+ },
+ {
+  "text": "Llama Guard 4 12B",
+  "count": 1
+ },
+ {
+  "text": " View debug info",
+  "count": 1
+ },
+ {
+  "text": " Update OpenCode",
+  "count": 1
+ },
+ {
+  "text": "Space Bunny Free",
+  "count": 1
+ },
+ {
+  "text": "Muse Glimmer 30B",
+  "count": 1
+ },
+ {
+  "text": "Mistral Medium 3",
+  "count": 1
+ },
+ {
+  "text": "Nemotron 3 Super",
+  "count": 1
+ },
+ {
+  "text": " Switch session",
+  "count": 1
+ },
+ {
+  "text": "MiMo-V2.6-Flash",
+  "count": 1
+ },
+ {
+  "text": " Clear session",
+  "count": 1
+ },
+ {
+  "text": " Open settings",
+  "count": 1
+ },
+ {
+  "text": "Kimi K2.7 Code",
+  "count": 1
+ },
+ {
+  "text": "Gemma-4-31B-IT",
+  "count": 1
+ },
+ {
+  "text": "Gemma 3 12B IT",
+  "count": 1
+ },
+ {
+  "text": "…/agents     ",
+  "count": 1
+ },
+ {
+  "text": " Switch agent",
+  "count": 1
+ },
+ {
+  "text": "…/btw        ",
+  "count": 1
+ },
+ {
+  "text": "…/clear      ",
+  "count": 1
+ },
+ {
+  "text": "…/connect    ",
+  "count": 1
+ },
+ {
+  "text": "…/continue   ",
+  "count": 1
+ },
+ {
+  "text": "…/debug      ",
+  "count": 1
+ },
+ {
+  "text": "…/diff       ",
+  "count": 1
+ },
+ {
+  "text": "…/editor     ",
+  "count": 1
+ },
+ {
+  "text": "…/effort     ",
+  "count": 1
+ },
+ {
+  "text": "…/exit       ",
+  "count": 1
+ },
+ {
+  "text": " Exit the app",
+  "count": 1
+ },
+ {
+  "text": "…/help       ",
+  "count": 1
+ },
+ {
+  "text": "…/mcps       ",
+  "count": 1
+ },
+ {
+  "text": "…/models     ",
+  "count": 1
+ },
+ {
+  "text": " Switch model",
+  "count": 1
+ },
+ {
+  "text": "…/new        ",
+  "count": 1
+ },
+ {
+  "text": "…/open       ",
+  "count": 1
+ },
+ {
+  "text": "…/pair       ",
+  "count": 1
+ },
+ {
+  "text": "…/plugins    ",
+  "count": 1
+ },
+ {
+  "text": "…/project    ",
+  "count": 1
+ },
+ {
+  "text": "…/projects   ",
+  "count": 1
+ },
+ {
+  "text": "…/quit       ",
+  "count": 1
+ },
+ {
+  "text": "…/reload     ",
+  "count": 1
+ },
+ {
+  "text": "…/resume     ",
+  "count": 1
+ },
+ {
+  "text": "…/sessions   ",
+  "count": 1
+ },
+ {
+  "text": "…/settings   ",
+  "count": 1
+ },
+ {
+  "text": "…/skills     ",
+  "count": 1
+ },
+ {
+  "text": "…/stats      ",
+  "count": 1
+ },
+ {
+  "text": "…/status     ",
+  "count": 1
+ },
+ {
+  "text": "…/themes     ",
+  "count": 1
+ },
+ {
+  "text": " Switch theme",
+  "count": 1
+ },
+ {
+  "text": "…/thinking   ",
+  "count": 1
+ },
+ {
+  "text": "…/update     ",
+  "count": 1
+ },
+ {
+  "text": "…/variants   ",
+  "count": 1
+ },
+ {
+  "text": "…/web        ",
+  "count": 1
+ },
+ {
+  "text": "…/worktrees  ",
+  "count": 1
+ },
+ {
+  "text": "…/init       ",
+  "count": 1
+ },
+ {
+  "text": "…/review     ",
+  "count": 1
+ },
+ {
+  "text": "GLM-5.3-Flash",
+  "count": 1
+ },
+ {
+  "text": "MiMo-V2.6-Pro",
+  "count": 1
+ },
+ {
+  "text": "Qwen3.8 Flash",
+  "count": 1
+ },
+ {
+  "text": "MiMo V2.5 Pro",
+  "count": 1
+ },
+ {
+  "text": "Laguna XS 2.1",
+  "count": 1
+ },
+ {
+  "text": "Gemma 3 4B IT",
+  "count": 1
+ },
+ {
+  "text": " Open editor",
+  "count": 1
+ },
+ {
+  "text": " MCP servers",
+  "count": 1
+ },
+ {
+  "text": " New session",
+  "count": 1
+ },
+ {
+  "text": " Pair device",
+  "count": 1
+ },
+ {
+  "text": " View status",
+  "count": 1
+ },
+ {
+  "text": "ctrl+shift+t",
+  "count": 1
+ },
+ {
+  "text": "ctrl+x enter",
+  "count": 1
+ },
+ {
+  "text": " OpenCode Go",
+  "count": 1
+ },
+ {
+  "text": "GPT-5.6 Luna",
+  "count": 1
+ },
+ {
+  "text": "Qwen3.7 Plus",
+  "count": 1
+ },
+ {
+  "text": "MiniMax-M2.7",
+  "count": 1
+ },
+ {
+  "text": "OpenCode Zen",
+  "count": 1
+ },
+ {
+  "text": "OpenCode Go",
+  "count": 1
+ },
+ {
+  "text": "更新 OpenCode",
+  "count": 1
+ },
+ {
+  "text": "Space Bunny",
+  "count": 1
+ },
+ {
+  "text": "Hy4 preview",
+  "count": 1
+ },
+ {
+  "text": "Qwen3.8 Max",
+  "count": 1
+ },
+ {
+  "text": "LongCat-2.0",
+  "count": 1
+ },
+ {
+  "text": "GPT OSS 20B",
+  "count": 1
+ },
+ {
+  "text": "studiovoice",
+  "count": 1
+ },
+ {
+  "text": "usdvalidate",
+  "count": 1
+ },
+ {
+  "text": "nv-embed-v1",
+  "count": 1
+ },
+ {
+  "text": "horizontal",
+  "count": 1
+ },
+ {
+  "text": "GPT-6 Luna",
+  "count": 1
+ },
+ {
+  "text": "MiniMax-M3",
+  "count": 1
+ },
+ {
+  "text": "Big Pickle",
+  "count": 1
+ },
+ {
+  "text": "shift+tab",
+  "count": 1
+ },
+ {
+  "text": "MiMo V2.5",
+  "count": 1
+ },
+ {
+  "text": "esm2-650m",
+  "count": 1
+ },
+ {
+  "text": "paligemma",
+  "count": 1
+ },
+ {
+  "text": " Plugins",
+  "count": 1
+ },
+ {
+  "text": "ctrl+x m",
+  "count": 1
+ },
+ {
+  "text": "ctrl+x l",
+  "count": 1
+ },
+ {
+  "text": "ctrl+x n",
+  "count": 1
+ },
+ {
+  "text": "ctrl+x w",
+  "count": 1
+ },
+ {
+  "text": "ctrl+x e",
+  "count": 1
+ },
+ {
+  "text": "ctrl+x a",
+  "count": 1
+ },
+ {
+  "text": "ctrl+x s",
+  "count": 1
+ },
+ {
+  "text": "opencode",
+  "count": 1
+ },
+ {
+  "text": "rendered",
+  "count": 1
+ },
+ {
+  "text": "Markdown",
+  "count": 1
+ },
+ {
+  "text": "Grok 4.7",
+  "count": 1
+ },
+ {
+  "text": "Grok 4.6",
+  "count": 1
+ },
+ {
+  "text": " Skills",
+  "count": 1
+ },
+ {
+  "text": "MCP 服务器",
+  "count": 1
+ },
+ {
+  "text": "compact",
+  "count": 1
+ },
+ {
+  "text": "Kimi K3",
+  "count": 1
+ },
+ {
+  "text": " Nvidia",
+  "count": 1
+ },
+ {
+  "text": "GLM-5.3",
+  "count": 1
+ },
+ {
+  "text": "GLM-5.2",
+  "count": 1
+ },
+ {
+  "text": "usdcode",
+  "count": 1
+ },
+ {
+  "text": "esmfold",
+  "count": 1
+ },
+ {
+  "text": " ctrl+a",
+  "count": 1
+ },
+ {
+  "text": " ctrl+f",
+  "count": 1
+ },
+ {
+  "text": " ctrl+d",
+  "count": 1
+ },
+ {
+  "text": " ctrl+r",
+  "count": 1
+ },
+ {
+  "text": "ctrl+p",
+  "count": 1
+ },
+ {
+  "text": "ctrl+o",
+  "count": 1
+ },
+ {
+  "text": "ctrl+t",
+  "count": 1
+ },
+ {
+  "text": "system",
+  "count": 1
+ },
+ {
+  "text": "prompt",
+  "count": 1
+ },
+ {
+  "text": "select",
+  "count": 1
+ },
+ {
+  "text": "Nvidia",
+  "count": 1
+ },
+ {
+  "text": "BGE M3",
+  "count": 1
+ },
+ {
+  "text": "ctrl+a",
+  "count": 1
+ },
+ {
+  "text": " Help",
+  "count": 1
+ },
+ {
+  "text": "Build",
+  "count": 1
+ },
+ {
+  "text": "/tmp",
+  "count": 1
+ },
+ {
+  "text": "auto",
+  "count": 1
+ },
+ {
+  "text": "hide",
+  "count": 1
+ },
+ {
+  "text": "word",
+  "count": 1
+ },
+ {
+  "text": "max",
+  "count": 1
+ },
+ {
+  "text": "esc",
+  "count": 1
+ },
+ {
+  "text": "VCS",
+  "count": 1
+ },
+ {
+  "text": "low",
+  "count": 1
+ },
+ {
+  "text": "TPS",
+  "count": 1
+ },
+ {
+  "text": "off",
+  "count": 1
+ },
+ {
+  "text": "tmp",
+  "count": 1
+ }
+]
