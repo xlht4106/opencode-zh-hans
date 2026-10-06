@@ -67,11 +67,11 @@ node plugin/scripts/build-dict.mjs
 - 覆盖率审计（开发用）：`node scripts/audit.mjs`，会在独立 tmux 会话中巡检主要界面，未命中英文写入 `audit/unmatched.json`。
 - 有意保留英文的项见 `audit/known-remaining.md`（模型名、命令、快捷键、枚举值、路径等）。
 
-## 与二进制汉化方案的关系
+## 说明
 
-- 本项目根目录的另一套方案通过修改二进制实现汉化（见上级 `README.md`），覆盖更彻底，但升级后需要重打补丁。
-- 两者可以并存：插件对已经是中文的文本不会重复翻译。
-- 想切换到纯插件方案：用原版二进制覆盖 `~/.opencode/bin/opencode` 即可（保留备份 `opencode.orig-v2.0.24`）。
+- 本仓库只包含插件方案；插件对已经是中文的文本不会重复翻译。
+- 想彻底移除汉化：删除插件目录即可（见上文"卸载"）。
+- 想修改内置译文：编辑仓库根目录 `dict/refinements.json`（优先级最高）后执行 `node plugin/scripts/build-dict.mjs` 重建，再重新安装。
 
 ## 原理
 

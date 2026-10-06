@@ -4,3 +4,5 @@ dist/
 plugin-probe/
 *.log
 *.tgz
+.superpowers/
+plugin/audit/shots/
