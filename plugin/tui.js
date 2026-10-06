@@ -100,6 +100,20 @@ export default Plugin.define({
       const seen = new Set()
       log(`setup：内置词典 ${translator.size} 条，审计模式 ${audit ? "开" : "关"}`)
 
+      const auditText = (text) => {
+        if (!audit) return
+        if (typeof text !== "string" || text.length > 120 || !/[A-Za-z]{3}/.test(text)) return
+        if (/[\u4e00-\u9fff]/.test(text)) return // 已含中文的不记
+        if (translator.translate(text) !== text) return // 已命中词典的不记
+        if (seen.has(text)) return
+        seen.add(text)
+        try {
+          appendFileSync(AUDIT, text + "\n")
+        } catch {
+          // 忽略审计写盘失败
+        }
+      }
+
       patchMethod(
         core.TextBuffer,
         "setStyledText",
@@ -107,26 +121,19 @@ export default Plugin.define({
           const chunks = styled?.chunks
           translator.applyChunks(chunks)
           if (audit && Array.isArray(chunks)) {
-            for (const chunk of chunks) {
-              const text = chunk?.text
-              if (typeof text !== "string" || text.length > 80 || !/[A-Za-z]{3}/.test(text)) continue
-              if (translator.translate(text) !== text) continue // 已命中词典的不记
-              if (seen.has(text)) continue
-              seen.add(text)
-              try {
-                appendFileSync(AUDIT, text + "\n")
-              } catch {
-                // 忽略审计写盘失败
-              }
-            }
+            for (const chunk of chunks) auditText(chunk?.text)
           }
         },
         "TextBuffer.setStyledText",
         restore,
       )
 
-      patchSetter(core.InputRenderable, "placeholder", (v) => translator.translate(v), "InputRenderable.placeholder", restore)
-      patchSetter(core.TextareaRenderable, "placeholder", (v) => translator.translate(v), "TextareaRenderable.placeholder", restore)
+      const placeholderTransform = (value) => {
+        auditText(value)
+        return translator.translate(value)
+      }
+      patchSetter(core.InputRenderable, "placeholder", placeholderTransform, "InputRenderable.placeholder", restore)
+      patchSetter(core.TextareaRenderable, "placeholder", placeholderTransform, "TextareaRenderable.placeholder", restore)
     } catch (e) {
       log(`setup 失败：${String(e)}`)
     }
