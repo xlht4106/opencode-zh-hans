@@ -2,7 +2,7 @@
 
 - 日期：2026-10-07
 - 状态：待评审
-- 关联：现有二进制汉化方案见 `~/opencode-zh/README.md`；可行性探针见 `~/opencode-zh/plugin-probe/`
+- 关联：现有二进制汉化方案见 `~/coding/opencode-zh/README.md`；可行性探针见 `~/coding/opencode-zh/plugin-probe/`
 
 ## 1. 背景与目标
 
@@ -32,7 +32,7 @@
 
 ## 3. 架构与组件
 
-源码目录：`~/opencode-zh/plugin/`
+源码目录：`~/coding/opencode-zh/plugin/`
 
 ```text
 plugin/
@@ -64,7 +64,7 @@ plugin/
 
 ### 3.2 词典（dict.json）
 
-- 由现有 `~/opencode-zh/dict/zh-CN.json` 转换生成：取 `modules` 中所有 原文→译文 映射，合并去重
+- 由现有 `~/coding/opencode-zh/dict/zh-CN.json` 转换生成：取 `modules` 中所有 原文→译文 映射，合并去重
 - 运行时词典的键是**实际渲染文本/片段**；与源码字面量大多一致，差异通过审计巡检补齐
 - 格式：
 
@@ -90,7 +90,7 @@ plugin/
 
 开发期（改动即生效）：
 
-- `~/.config/opencode/cli.json` 增加：`"plugins": [{ "package": "/home/xlht/opencode-zh/plugin" }]`
+- `~/.config/opencode/cli.json` 增加：`"plugins": [{ "package": "/home/xlht/coding/opencode-zh/plugin" }]`
 
 稳定后（推荐）：
 
@@ -136,7 +136,7 @@ plugin/
 
 ## 10. 交付物
 
-- `~/opencode-zh/plugin/` 插件源码与词典
+- `~/coding/opencode-zh/plugin/` 插件源码与词典
 - 巡检/审计脚本
 - 中文 README（安装、卸载、改词、升级后自检）
 - cli.json 注册示例（由安装脚本或文档提供）
