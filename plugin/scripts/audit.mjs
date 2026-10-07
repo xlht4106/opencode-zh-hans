@@ -1,6 +1,7 @@
 #!/usr/bin/env node
-// 审计巡检：在独立 tmux socket 中启动原版二进制 + 汉化插件（audit 模式），
+// 审计巡检：在独立 tmux socket 中启动 opencode 二进制 + 汉化插件（audit 模式），
 // 依次访问主要界面并截图，最后汇总未命中的英文渲染文本。
+// 默认使用已安装的 opencode，可用 OPENCODE_BIN 环境变量覆盖。
 //
 // 用法: node plugin/scripts/audit.mjs [输出目录，默认 plugin/audit]
 import { execFileSync } from "node:child_process"
@@ -12,7 +13,8 @@ const root = fileURLToPath(new URL("../..", import.meta.url))
 const outDir = resolve(process.argv[2] ?? join(root, "plugin/audit"))
 const shotsDir = join(outDir, "shots")
 const pluginDir = join(root, "plugin")
-const binary = join(process.env.HOME ?? "", ".opencode", "bin", "opencode.orig-v2.0.24")
+// 默认使用已安装的 opencode 二进制；可用 OPENCODE_BIN 覆盖（如指向其它版本）
+const binary = process.env.OPENCODE_BIN ?? join(process.env.HOME ?? "", ".opencode", "bin", "opencode")
 const auditLog = "/tmp/zh-hans-audit.log"
 const SOCKET = "zh-audit"
 const SESSION = "zh-audit"
