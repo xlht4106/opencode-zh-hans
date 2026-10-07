@@ -1,8 +1,31 @@
 {
   "name": "opencode-zh-hans",
   "version": "0.1.0",
+  "description": "OpenCode TUI 简体中文汉化插件：运行时按词典翻译界面文字，不改动二进制",
   "type": "module",
   "exports": {
     "./tui": "./tui.js"
-  }
+  },
+  "files": [
+    "tui.js",
+    "translate.js",
+    "dict.json"
+  ],
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "i18n",
+    "chinese",
+    "simplified-chinese",
+    "localization",
+    "tui",
+    "汉化"
+  ],
+  "homepage": "https://github.com/xlht4106/opencode-zh-hans#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xlht4106/opencode-zh-hans.git"
+  },
+  "author": "xlht4106",
+  "license": "MIT"
 }
