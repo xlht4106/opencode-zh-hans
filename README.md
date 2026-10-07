@@ -21,7 +21,7 @@ opencode plugin remove   # 卸载
 ## 特性
 
 - 全量 TUI 文案：主界面、命令面板、设置、对话框、会话界面、mini 界面、崩溃界面等
-- 只做精确匹配，不会误翻模型输出、文件路径、命令等动态内容
+- 只按完整字符串匹配，不会误翻模型输出、文件路径、命令等动态内容
 - hook 失效时静默降级（界面回英文），不会导致 TUI 崩溃
 - 支持用户覆盖词典与翻译优化覆盖层
 
@@ -62,7 +62,7 @@ TextareaRenderable.placeholder：注册成功
 ```text
 package.json            # 插件包（exports: ./tui）
 tui.js                  # 宿主 hook：TextBuffer.setStyledText / placeholder
-translate.js            # 翻译核心（精确匹配 + 受控摘要规则）
+translate.js            # 翻译核心（完整字符串匹配 + 受控摘要规则）
 dict.json               # 运行时词典（由 dict/ 下三层合成）
 scripts/build-dict.mjs  # 词典生成
 scripts/audit.mjs       # tmux 巡检 + 未命中审计（开发用）
@@ -91,7 +91,7 @@ node scripts/audit.mjs                # 覆盖率巡检（开发用，需要 tmu
 
 ## 原理
 
-hook OpenTUI 的 `TextBuffer.setStyledText`（chunk 级）与 `InputRenderable` / `TextareaRenderable` 的 `placeholder`，按词典精确匹配翻译。插件运行时 `import "@opentui/core"` 解析到宿主自己的模块实例，因此原型补丁直接作用于 TUI 实际使用的类。
+hook OpenTUI 的 `TextBuffer.setStyledText`（chunk 级）与 `InputRenderable` / `TextareaRenderable` 的 `placeholder`，按词典匹配翻译。插件运行时 `import "@opentui/core"` 解析到宿主自己的模块实例，因此原型补丁直接作用于 TUI 实际使用的类。
 
 ## 许可证类型
 
