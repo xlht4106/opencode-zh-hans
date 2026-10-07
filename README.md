@@ -4,7 +4,7 @@ OpenCode TUI 简体中文汉化插件：在渲染层按词典匹配翻译界面�
 
 > 非官方插件，与 OpenCode 官方无关。
 
-## 安装（官方方式）
+## 安装
 
 ```sh
 opencode plugin add "opencode-zh-hans@git+https://github.com/xlht4106/opencode-zh-hans"
@@ -16,15 +16,6 @@ opencode plugin add "opencode-zh-hans@git+https://github.com/xlht4106/opencode-z
 opencode plugin list     # 查看已安装插件
 opencode plugin update   # 更新到最新
 opencode plugin remove   # 卸载
-```
-
-本地开发时也可以不安装，直接在 `opencode.json(c)` 中引用本目录：
-
-```jsonc
-{
-  "$schema": "https://opencode.ai/config.json",
-  "plugins": ["/home/me/opencode-zh-hans"]
-}
 ```
 
 ## 特性
