@@ -1,6 +1,6 @@
 # opencode-zh-hans
 
-OpenCode TUI 简体中文汉化插件：在渲染层按词典精确匹配翻译界面文字，**不改动 opencode 二进制**，opencode 升级后通常无需重新处理。
+OpenCode TUI 简体中文汉化插件：在渲染层按词典匹配翻译界面文字，opencode 升级后通常无需重新处理。
 
 > 非官方插件，与 OpenCode 官方无关。
 
@@ -65,7 +65,6 @@ node plugin/scripts/audit.mjs         # 覆盖率巡检（开发用，需要 tmu
 
 hook OpenTUI 的 `TextBuffer.setStyledText`（chunk 级）与 `InputRenderable` / `TextareaRenderable` 的 `placeholder`，按词典精确匹配翻译。插件运行时 `import "@opentui/core"` 解析到宿主自己的模块实例，因此原型补丁直接作用于 TUI 实际使用的类。
 
-## 文档
+## 许可证类型
 
-- 设计文档：`docs/superpowers/specs/2026-10-07-zh-hans-plugin-design.md`
-- 实施计划：`docs/superpowers/plans/2026-10-07-zh-hans-plugin.md`
+MIT
