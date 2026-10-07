@@ -1,7 +1,7 @@
 {
   "name": "opencode-zh-hans",
   "version": "0.1.0",
-  "description": "OpenCode TUI 简体中文汉化插件：运行时按词典翻译界面文字，不改动二进制",
+  "description": "OpenCode TUI 简体中文汉化插件：在渲染层按词典匹配翻译界面文字，opencode 升级后通常无需重新处理",
   "type": "module",
   "exports": {
     "./tui": "./tui.js"
