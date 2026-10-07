@@ -9,10 +9,10 @@ import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node
 import { join, resolve } from "node:path"
 import { fileURLToPath } from "node:url"
 
-const root = fileURLToPath(new URL("../..", import.meta.url))
-const outDir = resolve(process.argv[2] ?? join(root, "plugin/audit"))
+const root = fileURLToPath(new URL("..", import.meta.url))
+const outDir = resolve(process.argv[2] ?? join(root, "audit"))
 const shotsDir = join(outDir, "shots")
-const pluginDir = join(root, "plugin")
+const pluginDir = root // 包根目录即插件包（供开发期 env 注册使用）
 // 默认使用已安装的 opencode 二进制；可用 OPENCODE_BIN 覆盖（如指向其它版本）
 const binary = process.env.OPENCODE_BIN ?? join(process.env.HOME ?? "", ".opencode", "bin", "opencode")
 const auditLog = "/tmp/zh-hans-audit.log"

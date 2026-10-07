@@ -69,11 +69,11 @@ function readOptionalJson(path) {
 }
 
 function main() {
-  const root = new URL("../..", import.meta.url)
+  const root = new URL("..", import.meta.url)
   const sourcePath = process.argv[2] ?? fileURLToPath(new URL("dict/zh-CN.json", root))
   const extraPath = process.argv[3] ?? fileURLToPath(new URL("dict/runtime-extra.json", root))
   const refinementsPath = process.argv[4] ?? fileURLToPath(new URL("dict/refinements.json", root))
-  const outPath = process.argv[5] ?? fileURLToPath(new URL("plugin/dict.json", root))
+  const outPath = process.argv[5] ?? fileURLToPath(new URL("dict.json", root))
 
   const source = JSON.parse(readFileSync(sourcePath, "utf8"))
   const extra = readOptionalJson(extraPath)
